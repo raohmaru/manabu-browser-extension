@@ -29,6 +29,7 @@ export async function getRandomWord(
     const columns = Object.values(DBFields);
     const db: SQLiteDatabase = await openDatabase(level);
     let res = await db.query(getQuery(columns, filters));
+    // If no matches, return random word
     if (!res.length) {
         res = await db.query(getQuery(columns));
         if (!res.length) {

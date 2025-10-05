@@ -189,7 +189,7 @@ word,furigana,translation,category,level
 温暖,おんだん,warm; mild,adjective,n3
 温度,おんど,temperature,noun,n3
 蚊,か,mosquito,noun,n3
-課,か,lesson; section; department,counter,n3
+〜課,か,lesson; section; department,counter,n3
 貝,かい,shell; shellfish,noun,n3
 会,かい,meeting; assembly; association,noun,n3
 海外,かいがい,overseas; abroad,noun,n3
@@ -343,7 +343,7 @@ word,furigana,translation,category,level
 疑問,ぎもん,question; problem; doubt,noun,n3
 逆,ぎゃく,reverse; opposite,noun,n3
 旧,きゅう,ex-; former,prefix,n3
-級,きゅう,class; grade; rank,counter,n3
+〜級,きゅう,class; grade; rank,counter,n3
 球,きゅう,globe; sphere; ball,noun,n3
 休暇,きゅうか,holiday; day off; vacation,noun,n3
 休憩,きゅうけい,rest; break; recess,noun,n3
@@ -437,9 +437,9 @@ word,furigana,translation,category,level
 欠点,けってん,fault; defect; weakness,noun,n3
 結論,けつろん,conclusion,noun,n3
 煙,けむり,smoke; fumes,noun,n3
-券,けん,ticket; coupon,counter,n3
+〜券,けん,ticket; coupon,counter,n3
 県,けん,prefecture,noun,n3
-軒,けん,counter for houses,counter,n3
+〜軒,けん,counter for houses,counter,n3
 見解,けんかい,opinion; point of view,noun,n3
 限界,げんかい,limit; bound,noun,n3
 現金,げんきん,cash,noun,n3
@@ -934,7 +934,7 @@ word,furigana,translation,category,level
 試し,ためし,trial; test,noun,n3
 便り,たより,news; tidings,noun,n3
 頼る,たよる,to rely on; to depend on,verb,n3
-段,だん,step; stair; grade,counter,n3
+〜段,だん,step; stair; grade,counter,n3
 単位,たんい,unit; denomination,noun,n3
 単語,たんご,word; vocabulary,noun,n3
 男子,だんし,youth; young man; boy; male,noun,n3

@@ -1036,14 +1036,14 @@ Tシャツ,ティーシャツ,T-shirt,noun,n5
 趣味は何ですか,しゅみはなんですか,What is your hobby?,phrase,n5
 大丈夫ですか,だいじょうぶですか,Are you okay?,phrase,n5
 はい、大丈夫です,はい、だいじょうぶです,"Yes, I'm okay",phrase,n5
-枚,まい,"counter for flat objects (e.g., paper, tickets)",counter,n5
-台,だい,"counter for machines (e.g., cars, computers)",counter,n5
-個,こ,"counter for small objects (e.g., apples, candies)",counter,n5
-歳,さい,counter for age,counter,n5
-冊,さつ,counter for books,counter,n5
-回,かい,"counter for times (e.g., occurrences)",counter,n5
-階,かい,"counter for floors (e.g., of a building)",counter,n5
-泊,はく,"counter for nights (staying over)",counter,n5
+〜枚,まい,"counter for flat objects (e.g., paper, tickets)",counter,n5
+〜台,だい,"counter for machines (e.g., cars, computers)",counter,n5
+〜個,こ,"counter for small objects (e.g., apples, candies)",counter,n5
+〜歳,さい,counter for age,counter,n5
+〜冊,さつ,counter for books,counter,n5
+〜回,かい,"counter for times (e.g., occurrences)",counter,n5
+〜階,かい,"counter for floors (e.g., of a building)",counter,n5
+〜泊,はく,"counter for nights (staying over)",counter,n5
 落ちる,おちる,to fall,verb,n5
 探す,さがす,to look for; to search,verb,n5
 今すぐ,いますぐ,right now,adverb,n5
