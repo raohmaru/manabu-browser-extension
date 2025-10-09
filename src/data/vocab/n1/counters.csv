@@ -1,0 +1,97 @@
+word,furigana,translation,category,level
+ヶ国,かこく,Counter for individual countries,counter,n1
+曲,きょく,"Counter for songs, pieces of music",counter,n1
+通,つう,"Counter for letters, emails, notes, documents",counter,n1
+粒,つぶ,"Counter for grains, seeds, drops, pills",counter,n1
+階級,かいきゅう,"Counter for social classes, ranks, grades",counter,n1
+回線,かいせん,"Counter for phone lines, internet connections, circuits",counter,n1
+欠片,かけら,"Counter for fragments, shards, pieces",counter,n1
+籠,かご,Counter for basketfuls,counter,n1
+塊,かたまり,"Counter for lumps, clumps, masses (e.g., of dough, clay, clouds)",counter,n1
+河川,かせん,Counter for rivers (formal),counter,n1
+株,かぶ,"Counter for rooted plants, stumps, clusters of mushrooms or shares of stock in a company",counter,n1
+冠,かん,"Counter for crowns, championships, tournament wins",counter,n1
+貫,かん,Counter for pieces of nigiri sushi,counter,n1
+脚,きゃく,"Counter for furniture with legs (e.g., chairs, desks)",counter,n1
+斤,きん,Counter for loaves of bread,counter,n1
+句,く,"Counter for haiku, senryu, short phrases",counter,n1
+区画,くかく,"Counter for plots of land, city blocks, sections",counter,n1
+串,くし,Counter for skewered food,counter,n1
+癖,くせ,"Counter for habits, quirks, mannerisms",counter,n1
+桁,けた,Counter for digits in a number,counter,n1
+項,こう,"Counter for clauses, sections, items (in a document)",counter,n1
+齣,こま,"Counter for frames (in a comic), scenes (in a play)",counter,n1
+柵 / 冊,さく,Counter for blocks of fish (like tuna),counter,n1
+莢,さや,Counter for beans in a pod,counter,n1
+軸,じく,"Counter for scrolls, hanging scrolls, rolls of paper (things that unwind from a central axis)",counter,n1
+次元,じげん,"Counter for dimensions (e.g., 2D, 3D)",counter,n1
+種目,しゅもく,Counter for events in a competition,counter,n1
+周年,しゅうねん,Counter for anniversaries,counter,n1
+巡,じゅん,"Counter for rounds, patrols, laps, cycles",counter,n1
+錠,じょう,"Counter for pills, tablets, lozenges",counter,n1
+刷,すり,"Counter for printed materials, impressions",counter,n1
+隻,せき,"Counter for large ships, vessels",counter,n1
+世帯,せだい,Counter for households,counter,n1
+膳,ぜん,"Counter for pairs of chopsticks; bowls of rice",counter,n1
+層,そう,Counter for layers; stories/floors of a building,counter,n1
+槽,そう,"Counter for bathtubs, water tanks, fish tanks or washing machine tubs",counter,n1
+艘,そう,"Counter for small boats, vessels",counter,n1
+揃い,そろい,"Counter for matching sets (e.g., suits, tea sets)",counter,n1
+尊,そん,"Counter for revered statues (e.g., of Buddha)",counter,n1
+卓,たく,"Counter for tables (such as desks, Mahjong tables, dining tables)",counter,n1
+樽,たる,"Counter for barrels, kegs",counter,n1
+弾,だん,"Counter for bullets; parts of a multipart story/plan/project",counter,n1
+単位,たんい,"Counter for academic credits, units",counter,n1
+段階,だんかい,"Counter for stages, phases, steps (in a process)",counter,n1
+段落,だんらく,Counter for paragraphs,counter,n1
+挺,ちょう,"Counter for hand-carried tools or vehicles (e.g., guns, knives, palanquins, violins)",counter,n1
+掴み,つかみ,Counter for handfuls,counter,n1
+綴,つづり,"Counter for sets of papers connected together (such as small booklets of coupons)",counter,n1
+坪,つぼ,3.31 m² of land (traditional unit of area),counter,n1
+摘み,つまみ,"Counter for pinches (of salt, spices, etc.)",counter,n1
+艇,てい,Counter for sailing boats specifically made for races,counter,n1
+滴,てき,Counter for drops of liquid,counter,n1
+店舗,てんぽ,"Counter for stores, shops, branches or chains of companies",counter,n1
+斗,と,18.04 liters (traditional unit of volume),counter,n1
+盗,とう,Counter for stolen bases in baseball,counter,n1
+塔,とう,"Counter for towers, pagodas, stupas",counter,n1
+棟,とう / むね,"Counter for large buildings, apartment blocks",counter,n1
+握り,にぎり,"Counter for handfuls; pieces of sushi",counter,n1
+派,は,"Counter for factions, schools of thought, sects",counter,n1
+拍,はく,"Counter for beats in music, claps",counter,n1
+針,はり,"Counter for stitches, staples",counter,n1
+犯,はん,"Counter for previous convictions, criminal records",counter,n1
+版,はん,"Counter for editions, versions (e.g., of software or magazine issues)",counter,n1
+班,はん,"Counter for small groups, teams, squads",counter,n1
+斑,はん,"Counter for spots, speckles",counter,n1
+尾,び,Counter for fish or crustaceans with fins or tails,counter,n1
+筆,ひつ,"Counter for strokes of writing; plots of land",counter,n1
+俵,ひょう,Counter for straw bags (usually of rice),counter,n1
+瓶,びん,"Counter for bottles, jars, vases",counter,n1
+品目,ひんもく,"Counter for items on a list, menu dishes",counter,n1
+封,ふう,"Counter for sealed letters, packets",counter,n1
+房,ふさ,"Counter for bunches, clusters (e.g., grapes, bananas)",counter,n1
+筆,ふで,Counter for a single brush stroke or application of paint (rare),counter,n1
+遍,へん,"Counter for repetitions, number of times (e.g., reading a book)",counter,n1
+弁,べん,Counter for petals that are still attached to a flower and valves,counter,n1
+峰,ほう / みね,Counter for mountain peaks,counter,n1
+幕,まく,"Counter for acts in a play; curtains",counter,n1
+盛り,もり,"Counter for servings, portions (piled on a plate)",counter,n1
+翼,よく,"Counter for airplanes; birds (poetic)",counter,n1
+輪,りん,"Counter for wheels, rings, flowers",counter,n1
+塁,るい,Counter for bases in baseball,counter,n1
+嶺,れい / りょう,Counter for mountain peaks,counter,n1
+連,れん,"Counter for reams of paper; strings of things (e.g., prayer beads)",counter,n1
+路線,ろせん,"Counter for routes (bus, train, etc.)",counter,n1
+把,わ,"Counter for bundles that can be held in one hand (e.g., vegetables, noodles)",counter,n1
+枠,わく,"Counter for frames, slots, available spots (e.g., TV commercials, job openings)",counter,n1
+椀,わん,"Counter for bowls of food (e.g., soup)",counter,n1
+握,あく,Counter for handfuls,counter,n1
+重ね,かさね,"Counter for layers, sets of stacked items (e.g., clothing, boxes)",counter,n1
+騎,き,"Counter for horsemen, cavalry",counter,n1
+掬,きく,Counter for scoops of liquid,counter,n1
+雫,しずく,Counter for drops of liquid,counter,n1
+帖,じょう,"Counter for flat, foldable things (e.g., screens, nori sheets); units of 10 sheets of paper",counter,n1
+舗,ほ,Counter for folded items like maps (rare),counter,n1
+旒 / 流,りゅう,"Counter for flags, banners, streamers",counter,n1
+鱗,りん,Counter for fish (formal/literary),counter,n1

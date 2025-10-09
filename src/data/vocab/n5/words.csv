@@ -147,7 +147,6 @@ word,furigana,translation,category,level
 鍵,かぎ,key,noun,n5
 書く,かく,to write,verb,n5
 学生,がくせい,student,noun,n5
-〜か月,〜かげつ,counter for months,counter,n5
 かける,,to put on; to hang,verb,n5
 傘,かさ,umbrella,noun,n5
 貸す,かす,to lend,verb,n5
@@ -223,7 +222,6 @@ word,furigana,translation,category,level
 玄関,げんかん,entrance hall,noun,n5
 元気,げんき,healthy; lively,adjective,n5
 五,ご,five,number,n5
-〜語,〜ご,language,counter,n5
 公園,こうえん,park,noun,n5
 交差点,こうさてん,intersection,noun,n5
 紅茶,こうちゃ,black tea,noun,n5
@@ -256,23 +254,20 @@ word,furigana,translation,category,level
 こんにちは,,Hello; Good afternoon,phrase,n5
 こんばんは,,Good evening,phrase,n5
 さあ,,well...,interjection,n5
-〜歳,〜さい,〜 years old,counter,n5
 財布,さいふ,wallet,noun,n5
 魚,さかな,fish,noun,n5
 先,さき,ahead; before,noun,n5
 咲く,さく,to bloom,verb,n5
 作文,さくぶん,composition; essay,noun,n5
 差す,さす,to hold up (an umbrella),verb,n5
-〜冊,〜さつ,counter for books,counter,n5
 雑誌,ざっし,magazine,noun,n5
 砂糖,さとう,sugar,noun,n5
 寒い,さむい,cold (weather),adjective,n5
 さ来年,さらいねん,year after next,noun,n5
 三,さん,three,number,n5
-〜さん,,Mr.; Mrs.; Ms.,counter,n5
+〜さん,,Mr.; Mrs.; Ms.,suffix,n5
 散歩,さんぽ,walk; stroll,noun,n5
-四,し / よん,four,number,n5
-〜時,〜じ,o'clock,counter,n5
+四,し、よん,four,number,n5
 塩,しお,salt,noun,n5
 しかし,,however; but,conjunction,n5
 時間,じかん,time; hour,noun,n5
@@ -280,7 +275,7 @@ word,furigana,translation,category,level
 辞書,じしょ,dictionary,noun,n5
 静か,しずか,quiet,adjective,n5
 下,した,under; below,noun,n5
-七,しち / なな,seven,number,n5
+七,しち、なな,seven,number,n5
 質問,しつもん,question,noun,n5
 自転車,じてんしゃ,bicycle,noun,n5
 自動車,じどうしゃ,automobile,noun,n5
@@ -295,7 +290,6 @@ word,furigana,translation,category,level
 シャツ,,shirt,noun,n5
 シャワー,,shower,noun,n5
 十,じゅう,ten,number,n5
-〜週間,〜しゅうかん,〜 weeks,counter,n5
 授業,じゅぎょう,class; lesson,noun,n5
 宿題,しゅくだい,homework,noun,n5
 上手,じょうず,skillful; good at,adjective,n5
@@ -347,7 +341,6 @@ word,furigana,translation,category,level
 それ,,that one,pronoun,n5
 それから,,and then; after that,conjunction,n5
 それでは,,in that case; well then,conjunction,n5
-〜代,〜だい,charge; fee,counter,n5
 大学,だいがく,university,noun,n5
 大使館,たいしかん,embassy,noun,n5
 大丈夫,だいじょうぶ,all right; okay,adjective,n5
@@ -415,7 +408,6 @@ word,furigana,translation,category,level
 電車,でんしゃ,train,noun,n5
 電話,でんわ,telephone,noun,n5
 戸,と,door (Japanese style),noun,n5
-〜度,〜ど,degrees (temperature); times,counter,n5
 トイレ,,toilet,noun,n5
 どう,,how,adverb,n5
 どうして,,why,adverb,n5
@@ -458,7 +450,7 @@ word,furigana,translation,category,level
 夏休み,なつやすみ,summer vacation,noun,n5
 〜など,,and so on; etc.,particle,n5
 七つ,ななつ,seven (things),number,n5
-何,なに / なん,what,interrogative,n5
+何,なに、なん,what,interrogative,n5
 七日,なのか,seven days; the 7th day,noun,n5
 名前,なまえ,name,noun,n5
 習う,ならう,to learn,verb,n5
@@ -470,7 +462,6 @@ word,furigana,translation,category,level
 賑やか,にぎやか,lively; bustling,adjective,n5
 肉,にく,meat,noun,n5
 西,にし,west,noun,n5
-〜曜日,〜ようび,day of the week,counter,n5
 日曜日,にちようび,Sunday,noun,n5
 荷物,にもつ,luggage; baggage,noun,n5
 ニュース,,news,noun,n5
@@ -480,7 +471,6 @@ word,furigana,translation,category,level
 ネクタイ,,necktie,noun,n5
 猫,ねこ,cat,noun,n5
 寝る,ねる,to sleep,verb,n5
-〜年,〜ねん,year,counter,n5
 ノート,,notebook,noun,n5
 登る,のぼる,to climb,verb,n5
 飲み物,のみもの,drink; beverage,noun,n5
@@ -489,7 +479,6 @@ word,furigana,translation,category,level
 歯,は,tooth,noun,n5
 パーティー,,party,noun,n5
 はい,,yes,interjection,n5
-〜杯,〜はい,counter for cups/glasses,counter,n5
 灰皿,はいざら,ashtray,noun,n5
 入る,はいる,to enter,verb,n5
 葉書,はがき,postcard,noun,n5
@@ -557,9 +546,7 @@ word,furigana,translation,category,level
 降る,ふる,"to fall (rain, snow)",verb,n5
 古い,ふるい,old,adjective,n5
 風呂,ふろ,bath,noun,n5
-〜分,〜ふん / ぷん,minute,counter,n5
 文章,ぶんしょう,sentence; text,noun,n5
-ページ,,page,noun,n5
 下手,へた,unskillful,adjective,n5
 ベッド,,bed,noun,n5
 ペット,,pet,noun,n5
@@ -578,7 +565,6 @@ word,furigana,translation,category,level
 ボタン,,button,noun,n5
 ホテル,,hotel,noun,n5
 本,ほん,book,noun,n5
-〜本,〜ほん,"counter for long, cylindrical objects",counter,n5
 本棚,ほんだな,bookshelf,noun,n5
 ほんとうに,,really; truly,adverb,n5
 毎朝,まいあさ,every morning,noun,n5
@@ -773,7 +759,7 @@ Tシャツ,ティーシャツ,T-shirt,noun,n5
 おはよう,,good morning,phrase,n5
 じゃあね,,see you,phrase,n5
 分かりました,わかりました,I understand,phrase,n5
-円,えん,yen,noun,n5
+円,えん,yen (Japanese currency),noun,n5
 簡単,かんたん,easy; simple,adjective,n5
 始める,はじめる,to start,verb,n5
 ドア,,door,noun,n5
@@ -828,6 +814,7 @@ Tシャツ,ティーシャツ,T-shirt,noun,n5
 信号,しんごう,traffic light,noun,n5
 都市,とし,city,noun,n5
 住所,じゅうしょ,address,noun,n5
+番号,ばんごう,number; series of digits​,noun,n5
 電話番号,でんわばんごう,phone number,noun,n5
 年齢,ねんれい,age,noun,n5
 趣味,しゅみ,hobby,noun,n5
@@ -1036,14 +1023,6 @@ Tシャツ,ティーシャツ,T-shirt,noun,n5
 趣味は何ですか,しゅみはなんですか,What is your hobby?,phrase,n5
 大丈夫ですか,だいじょうぶですか,Are you okay?,phrase,n5
 はい、大丈夫です,はい、だいじょうぶです,"Yes, I'm okay",phrase,n5
-〜枚,まい,"counter for flat objects (e.g., paper, tickets)",counter,n5
-〜台,だい,"counter for machines (e.g., cars, computers)",counter,n5
-〜個,こ,"counter for small objects (e.g., apples, candies)",counter,n5
-〜歳,さい,counter for age,counter,n5
-〜冊,さつ,counter for books,counter,n5
-〜回,かい,"counter for times (e.g., occurrences)",counter,n5
-〜階,かい,"counter for floors (e.g., of a building)",counter,n5
-〜泊,はく,"counter for nights (staying over)",counter,n5
 落ちる,おちる,to fall,verb,n5
 探す,さがす,to look for; to search,verb,n5
 今すぐ,いますぐ,right now,adverb,n5

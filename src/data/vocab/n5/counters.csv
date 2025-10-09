@@ -1,0 +1,108 @@
+word,furigana,translation,category,level
+校,こう,"Counter for schools; proofreading drafts",counter,n5
+週,しゅう,Counter for weeks,counter,n5
+週間,しゅうかん,Counter for weeks (duration),counter,n5
+色,しょく / いろ,Counter for colors,counter,n5
+部屋,へや,Counter for rooms,counter,n5
+名,めい,"Counter for people (polite, often in business/service contexts)",counter,n5
+話,わ,"Counter for stories or episodes of series",counter,n5
+駅,えき,Counter for stations,counter,n5
+音,おん,"Counter for sounds, notes",counter,n5
+海,かい,Counter for seas or oceans,counter,n5
+方,かた,Counter for people (very polite/formal),counter,n5
+客,きゃく,"Counter for utensils, tableware, etc, used for receiving guests",counter,n5
+金,きん,Counter for karats of gold,counter,n5
+国,こく,Counter for countries,counter,n5
+紙,し,Counter for newspapers (rare),counter,n5
+女,じょ,"Counter for daughters (in a sequence, e.g., 長女 first daughter)",counter,n5
+手,て,"Counter for techniques, moves (in games/martial arts)",counter,n5
+店,てん,"Counter for stores, shops",counter,n5
+男,なん,"Counter for sons (in a sequence, e.g., 長男 first son)",counter,n5
+晩,ばん,Counter for nights,counter,n5
+分,ぶん,"Counter for minutes; portions; parts/fractions",counter,n5
+間,ま,Counter for rooms,counter,n5
+目,め,"Suffix for ordinal numbers (e.g., 1st, 2nd, 3rd)",counter,n5
+夜,や / よ,Counter for nights,counter,n5
+山,やま,"Counter for mountains, piles, mounds, etc.",counter,n5
+石,せき,"Counter for stones, pebbles or small rocks",counter,n5
+年 / 歳,とせ,Counter for years of age (archaic/poetic),counter,n5
+足,そく,"Counter for pairs of footwear (socks, shoes)",counter,n5
+ヶ月,〜かげつ,Counter for months (duration),counter,n5
+語,〜ご,"Suffix for languages (e.g., 日本語)",counter,n5
+歳,〜さい,Counter for years of age,counter,n5
+冊,〜さつ,"Counter for books, magazines, bound volumes",counter,n5
+時,〜じ,"Counter for o'clock, hour of the day",counter,n5
+時間,じかん,Counter for hours (duration),counter,n5
+週間,〜しゅうかん,Counter for weeks (duration),counter,n5
+代,〜だい,"Counter for fees, charges, costs",counter,n5
+年,ねん,Counter for years,counter,n5
+曜日,〜ようび,Day of the week,counter,n5
+杯,〜はい,"Counter for cups, glasses, bowls of liquid; squid, octopus",counter,n5
+日,にち、か,"Counter for days of the month; number of days",counter,n5
+人,にん,Counter for people,counter,n5
+本,〜ほん,"Counter for long, cylindrical objects (e.g., pens, bottles, trees, rivers)",counter,n5
+枚,まい,"Counter for thin, flat objects (e.g., paper, empty plates, clothing)",counter,n5
+台,だい,"Counter for vehicles, machines, appliances",counter,n5
+個,こ,"Counter for generic small and/or round objects, or objects that have a distinct boundary",counter,n5
+回,かい,"Counter for times, occurrences, repetitions",counter,n5
+階,かい,Counter for floors/stories of a building,counter,n5
+泊,はく,Counter for nights of a stay,counter,n5
+匹,ひき,"Counter for small animals (e.g., dog, fish, insects)",counter,n5
+つ,,"Generic counter for items from 1 to 9, often for abstract things",counter,n5
+番,ばん,"Ordinal for numbers in a series, rank, turn",counter,n5
+ページ,,Counter for pages,counter,n5
+アイテム,,Counter for items,counter,n5
+アクセス,,"Counter for web hits, access counts",counter,n5
+イニング,,Counter for innings (in baseball),counter,n5
+インチ,,Counter for inches,counter,n5
+エーカー,,Counter for acres,counter,n5
+オンス,,Counter for ounces,counter,n5
+カートン,,Counter for cartons,counter,n5
+カット,,"Counter for cuts (of film), scenes, illustrations",counter,n5
+カップ,,Counter for cups,counter,n5
+カラー,,Counter for colors,counter,n5
+カラット,,Counter for carats (gemstones),counter,n5
+ガロン,,Counter for gallons,counter,n5
+キロ / キログラム,,Counter for kilograms,counter,n5
+キロ / キロメートル,,Counter for kilometers,counter,n5
+クール,,Counter for quarters of a year (esp. for TV series),counter,n5
+クラス,,"Counter for classes, ranks",counter,n5
+グラム,,Counter for grams,counter,n5
+グループ,,Counter for groups,counter,n5
+ゲーム,,"Counter for games, matches",counter,n5
+ゴール,,Counter for goals,counter,n5
+シーン,,"Counter for scenes (in a film, play, etc.)",counter,n5
+ステップ,,"Counter for steps, stages, phases",counter,n5
+セット,,Counter for sets,counter,n5
+センチ / センチメートル,,Counter for centimeters,counter,n5
+ダース,,Counter for dozens,counter,n5
+タイプ,,"Counter for types, kinds",counter,n5
+チーム,,Counter for teams,counter,n5
+チャンス,,"Counter for chances, opportunities",counter,n5
+ドル,,Counter for dollars,counter,n5
+トン,,Counter for tons,counter,n5
+ネット,,"Counter for nets, mesh bags",counter,n5
+パターン,,"Counter for patterns, types",counter,n5
+バイト,,Counter for bytes,counter,n5
+パック,,"Counter for packs, cartons",counter,n5
+ハロン,,Counter for furlongs,counter,n5
+ピース,,Counter for pieces,counter,n5
+ピクセル,,Counter for pixels,counter,n5
+ヒット,,"Counter for hits (in sports or music)",counter,n5
+ビット,,Counter for bits,counter,n5
+フィート,,Counter for feet (measurement),counter,n5
+プラン,,Counter for plans,counter,n5
+ベース,,Counter for bases,counter,n5
+ヘクタール,,Counter for hectares,counter,n5
+ポイント,,Counter for points,counter,n5
+ポンド / パウンド,,"Counter for pounds (currency and weight)",counter,n5
+マイル,,Counter for miles,counter,n5
+メートル,,Counter for meters,counter,n5
+ヤード,,Counter for yards,counter,n5
+ユニット,,Counter for units,counter,n5
+ラウンド,,"Counter for rounds (in sports, games)",counter,n5
+リットル,,Counter for liters,counter,n5
+ルーム,,Counter for rooms,counter,n5
+レース,,Counter for races,counter,n5
+ロール,,Counter for rolls,counter,n5
+ワード,,Counter for words,counter,n5

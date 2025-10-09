@@ -21,15 +21,22 @@ async function start() {
             const levelData = [];
             for (let i = 0; i < files.length; i++) {
                 const filename = files[i];
-                console.log('\n[DB] Creating database from', filename);
+                console.log('[DB] Reading rows from', filename);
                 const rows = await readCSV(filename);
-                const records = await createDatabase(rows, filename.replace(/\.\w+$/, '.sqlite3'), id);
-                id += records.length + 100;  // Add enough room for new entries between databases
+                const records = await createDatabase({
+                    data: rows,
+                    // filename.replace(/\.\w+$/, '.sqlite3'),
+                    id
+                });
+                console.log(`     ${records.length} rows`);
                 levelData.push(...records);
             }
             // Merge all databases of the same level
-            console.log(`\n[DB] Creating ${dir.toUpperCase()} database`);
-            await createDatabase(levelData, join(distDir, 'data', 'vocab', `${dir}.sqlite3`));
+            console.log(`[DB] Creating ${dir.toUpperCase()} database`);
+            await createDatabase({
+                data: levelData,
+                filename: join(distDir, 'data', 'vocab', `${dir}.sqlite3`)
+            });
         }
     }
 }
@@ -44,35 +51,37 @@ async function readCSV(filename) {
     });
 }
 
-async function createDatabase(data, filename, id) {
+async function createDatabase({data, filename, id}) {
     return new Promise((resolve) => {
         const db = new sqlite3.oo1.DB(':memory:', 'c');
         const numRecords = [];
         const records = [];
         let count = 0;
         try {
-            db.exec(`
-                CREATE TABLE IF NOT EXISTS words (
-                    id INTEGER,
-                    word TEXT NOT NULL,
-                    furigana TEXT,
-                    translation TEXT NOT NULL,
-                    category INTEGER NOT NULL,
-                    level INTEGER NOT NULL,
-                    description TEXT,
-                    example TEXT,
-                    example_translation TEXT,
-                    onyomi TEXT,
-                    kunyomi TEXT
-                );
-                --VACUUM;
-            `);
-
-            // Prepare statement for inserting words
-            const stmt = db.prepare(`
-                INSERT INTO words (${DBFields.join(', ')})
-                VALUES (${Array(DBFields.length).fill('?').join(', ')})
-            `);
+            let stmt;
+            if (filename) {
+                db.exec(`
+                    CREATE TABLE IF NOT EXISTS words (
+                        id INTEGER,
+                        word TEXT NOT NULL,
+                        furigana TEXT,
+                        translation TEXT NOT NULL,
+                        category INTEGER NOT NULL,
+                        level INTEGER NOT NULL,
+                        description TEXT,
+                        example TEXT,
+                        example_translation TEXT,
+                        onyomi TEXT,
+                        kunyomi TEXT
+                    );
+                    --VACUUM;
+                `);
+                // Prepare statement to insert words
+                stmt = db.prepare(`
+                    INSERT INTO words (${DBFields.join(', ')})
+                    VALUES (${Array(DBFields.length).fill('?').join(', ')})
+                `);
+            }
             for (let i = 0; i < data.length; i++) {
                 let arr = data[i];
                 if (id) {
@@ -81,10 +90,16 @@ async function createDatabase(data, filename, id) {
                     arr[4] = Categories.indexOf(arr[4]);  // String category to number
                     arr[5] = JLPTLevels.indexOf(arr[5]);  // String level to number
                 }
-                stmt.bind(arr);
-                stmt.stepReset();
+                if (filename) {
+                    stmt.bind(arr);
+                    stmt.stepReset();
+                }
                 count++;
                 records.push(arr);
+            }
+            if (!filename) {
+                resolve(records);
+                return;
             }
             stmt.finalize();
             db.exec({
@@ -106,8 +121,8 @@ async function createDatabase(data, filename, id) {
             writeFileSync(distFile, Buffer.from(byteArray));
 
             db.close();
-            console.log(`[DB]  Inserted ${numRecords[0]} records in the database out of ${count} entries from the CSV data`);
-            console.log(`[DB]  Database created in ${distFile}`);
+            console.log(`[DB] Inserted ${numRecords[0]} records in the database out of ${count} entries from the CSV data`);
+            console.log(`[DB] Database created in ${distFile}`);
             resolve(records);
         }
     });

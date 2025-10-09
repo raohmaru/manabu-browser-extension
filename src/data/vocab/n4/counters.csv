@@ -1,0 +1,34 @@
+word,furigana,translation,category,level
+組,くみ,"Counter for groups, sets, pairs",counter,n4
+切れ,きれ,"Counter for slices (especially foods)",counter,n4
+口,くち,"Counter for mouthfuls, bites, sips; shares or accounts",counter,n4
+試合,しあい,"Counter for games, matches",counter,n4
+品,しな / ひん,"Counter for dishes in a meal; items or products",counter,n4
+社,しゃ,"Counter for companies, shrines",counter,n4
+席,せき,"Counter for seats; gatherings; wins in a competition",counter,n4
+発,はつ,"Counter for shots, bullets, fireworks",counter,n4
+歩,ほ,Counter for steps (physical and abstract),counter,n4
+課,か,"Counter for sections of a company or organization, or lessons",counter,n4
+画素,がそ,Counter for pixels,counter,n4
+言,こと,Counter for words,counter,n4
+作,さく,Counter for literary or artistic works,counter,n4
+歯,し,"Counter for cogs, gears",counter,n4
+字,じ,"Counter for characters, letters",counter,n4
+次,じ,"Ordinal for order or sequence of events",counter,n4
+者,しゃ,Counter for people (formal/written style),counter,n4
+図,ず,"Counter for diagrams, figures, illustrations",counter,n4
+体,たい,"Counter for humanoid figures (dolls, statues, bodies)",counter,n4
+代,だい,"Counter for generations, eras, reigns; machine/vehicle costs",counter,n4
+題,だい,"Counter for questions, problems (on a test)",counter,n4
+島,とう,Counter for islands,counter,n4
+通り,とおり,"Counter for ways, methods, types",counter,n4
+度数,どすう,Counter for frequency; strength of alcohol or glasses,counter,n4
+文,ぶん,Counter for sentences,counter,n4
+文節,ぶんせつ,"Counter for clauses, phrases",counter,n4
+礼,れい,Counter for bows,counter,n4
+橋,きょう,Counter for bridges,counter,n4
+振り,ふり,"Counter for swords, blades, etc.",counter,n4
+別,べつ,"Counter for partings, separations (literary)",counter,n4
+頭,とう,"Counter for large animals (e.g., cattle, elephants, whales)",counter,n4
+着,ちゃく,"Counter for suits of clothing; arrivals",counter,n4
+度,ど,"Counter for occurrences, times; degrees (temperature, angle)",counter,n4

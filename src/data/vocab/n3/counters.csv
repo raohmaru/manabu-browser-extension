@@ -1,0 +1,63 @@
+word,furigana,translation,category,level
+ヶ所,かしょ,"Counter for places, locations, points",counter,n3
+件,けん,"Counter for cases, matters, items, documents",counter,n3
+語,ご,Counter for words,counter,n3
+種類,しゅるい,"Counter for kinds, types, varieties",counter,n3
+戦,せん,"Counter for battles, matches, rounds (in a fight)",counter,n3
+束,たば,"Counter for bundles, bunches (e.g., firewood, flowers, bills)",counter,n3
+段,だん,"Counter for steps, tiers, levels or ranks in martial arts (things with distinct levels)",counter,n3
+点,てん,"Counter for points (in a game), items in a set, dots",counter,n3
+箱,はこ,"Counter for boxes, cases",counter,n3
+便,びん,"Counter for flights or trips, deliveries, regular transport services",counter,n3
+文字,もじ,"Counter for letters, characters",counter,n3
+問,もん,"Counter for questions, problems (on a test)",counter,n3
+案,あん,"Counter for proposals, plans, ideas",counter,n3
+位,い,"Counter for rank, place (e.g., 1st place)",counter,n3
+院,いん,"Counter for legislative bodies, institutions, temples",counter,n3
+折,おり,"Counter for folded items (such as paper cranes) or portions in a bento box",counter,n3
+片,かた,"Counter for broken-up, random pieces of something (such as cloves of garlic)",counter,n3
+館,かん,"Counter for large buildings, halls, manors",counter,n3
+機,き,"Counter for aircraft, machines",counter,n3
+期,き,"Counter for periods, terms, phases (e.g., school terms)",counter,n3
+級,きゅう,"Counter for levels, grades, ranks or decapitated heads",counter,n3
+区,く,"Counter for city districts, zones, sections",counter,n3
+軍,ぐん,"Counter for armies, military groups, sports teams",counter,n3
+鍵,けん,Counter for keys on a keyboard (rare),counter,n3
+戸,こ,"Counter for houses, households",counter,n3
+号,ごう,"Ordinal for numbers in a series (such as room, train or magazine number)",counter,n3
+合,ごう,0.18 liter cups of rice or sake (traditional unit of volume),counter,n3
+室,しつ,Counter for rooms,counter,n3
+種,しゅ,"Counter for kinds, types, varieties",counter,n3
+重,じゅう,"Counter for stacked items, layers",counter,n3
+床,しょう,Counter for beds,counter,n3
+親等,しんとう,Counter for degrees of kinship,counter,n3
+世,せい,"Counter for generations; reigns",counter,n3
+説,せつ,"Counter for theories, views, opinions",counter,n3
+速,そく,Counter for gears (on a vehicle),counter,n3
+団,だん,"Counter for groups, delegations, troupes",counter,n3
+対,つい,Counter for pairs (especially opponents or matching items),counter,n3
+包み,つつみ,"Counter for wrapped items, packages, bundles",counter,n3
+投,とう,"Counter for pitches in baseball, throws",counter,n3
+湯,とう / ゆ,"Counter for hot springs, onsen",counter,n3
+等,とう,"Counter for class, grade, rank (e.g., first class)",counter,n3
+倍,ばい,"Counter for multiples, 'times' (e.g., two times bigger)",counter,n3
+馬身,ばしん,Counter for horse lengths (in racing),counter,n3
+番手,ばんて,Counter for rank or position in a sequence,counter,n3
+部,ぶ,"Counter for copies of a publication; departments or clubs",counter,n3
+服,ふく,"Counter for doses of powdered medicine; bowls of matcha; puffs of a cigarette",counter,n3
+振り,ふり,"Counter for swords, knives, blades",counter,n3
+辺,へん,Counter for sides of a polygon,counter,n3
+包,ほう,"Counter for packets, packages (esp. medicine)",counter,n3
+報,ほう,"Counter for news reports, pieces of information",counter,n3
+回り / 周り,まわり,"Counter for sizes (e.g., waist size); revolutions (e.g., rounds, circuits, laps)",counter,n3
+面,めん,"Counter for surfaces (mirrors, courts); pages of a newspaper; levels in a video game",counter,n3
+列,れつ,"Counter for rows, lines, queues",counter,n3
+重,え,"Counter for layers (in clothing), stacked boxes",counter,n3
+果 / 菓,か,Counter for fruits (poetic/archaic),counter,n3
+片,へん,"Counter for fragments, slivers, pieces",counter,n3
+門,もん,"Counter for cannons, artillery",counter,n3
+葉,よう,"Counter for leaves, blades of grass; pages",counter,n3
+課,か,"Counter for lessons, chapters, departments",counter,n3
+級,きゅう,"Counter for level, grade, rank",counter,n3
+券,けん,"Counter for tickets, coupons",counter,n3
+軒,けん,Counter for houses,counter,n3
