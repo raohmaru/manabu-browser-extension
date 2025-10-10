@@ -57,6 +57,13 @@ export class SQLiteDatabase {
 
 export async function openDatabase(level: Number): Promise<SQLiteDatabase> {
     return new Promise(async (resolve) => {
+        // Silent logs
+        globalThis.sqlite3ApiConfig = {
+            warn: () => {},
+            error: () => {},
+            debug: () => {},
+            log: () => {}
+        };
         const sqlite3 = await sqlite3InitModule({
             print: console.log,
             printErr: console.error,

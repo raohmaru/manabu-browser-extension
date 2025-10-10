@@ -11,7 +11,7 @@ export default function(data: { [key: string]: any }) {
         ` || ''}
 
         ${data.romaji && data.word.romaji && `
-            ${data.furigana && `
+            ${data.furigana && data.word.furigana && `
                 <div class="mx-4">※</div>
             ` || ''}
             <div class="text-1xl text-center mb-2" title="Romaji reading">

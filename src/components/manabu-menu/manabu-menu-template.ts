@@ -11,7 +11,7 @@ export default function(data: { [key: string]: any }) {
         <div class="flex gap-4 flex-wrap justify-center mb-8">
             <select class="select" title="Show words of this category"
                     :change="selectCategory()">
-                ${data.categories.map((value, key) =>
+                ${data.categories.map((value: string, key: number) =>
                     `<option value="${key}" ${ data.category === key ? 'selected' : "" }>
                         ${value}
                     </option>`
@@ -20,7 +20,7 @@ export default function(data: { [key: string]: any }) {
 
             <select class="select" title="Show words of this JLPT level"
                     :change="selectLevel()">
-                ${data.jlptLevels.map((value, key) =>
+                ${data.jlptLevels.map((value: string, key: number) =>
                     `<option value="${key}" ${ data.level === key ? 'selected' : "" }>
                         ${value}
                     </option>`
@@ -64,7 +64,7 @@ export default function(data: { [key: string]: any }) {
                 Voice:
                 <select class="select mb-2" title="Available voices in your device"
                         :change="selectVoice()">
-                    ${data.voices.map((value, key) =>
+                    ${data.voices.map((value: SpeechSynthesisVoice, key: number) =>
                         `<option value="${key}" ${ data.voice === key ? 'selected' : "" }>
                             ${value.name} ${(!value.localService && '*' || '')}
                         </option>`
