@@ -37,6 +37,13 @@ export default function(data: { [key: string]: any }) {
 
         <fieldset class="mb-4">
             <label class="toggle">
+                <input type="checkbox" :change="changeSetting('romaji')" ${ data.romaji ? 'checked' : '' }>
+                Show romaji
+            </label>
+        </fieldset>
+
+        <fieldset class="mb-4">
+            <label class="toggle">
                 <input type="checkbox" :change="changeSetting('description')" ${ data.description ? 'checked' : '' }>
                 Show description
             </label>

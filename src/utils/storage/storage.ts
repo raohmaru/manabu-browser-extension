@@ -8,6 +8,7 @@ const defaults: StoredData = {
     category: 0,
     level: 0,
     furigana: true,
+    romaji: true,
     description: true,
     examples: true,
     voice: 0,

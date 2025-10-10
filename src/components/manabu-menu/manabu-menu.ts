@@ -25,9 +25,9 @@ export default class Menu extends Component {
                 return {
                     localService: voice.localService,
                     name: voice.name
-                        // For MS voices
+                        // MS voices
                         .replace(' - Japanese (Japan)', '')
-                        // For Apple voices
+                        // Apple voices
                         .replace(' (Japanese (Japan))', '')
                 }
             })

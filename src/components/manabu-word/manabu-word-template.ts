@@ -3,18 +3,29 @@ export default function(data: { [key: string]: any }) {
 <link href="components/manabu-word/manabu-word.css" rel="stylesheet">
 
 <section class="flex-1 content-center pt-12 pb-8 text-center">
-    ${data.furigana && data.word.furigana && `
-        <div class="text-1xl text-center mb-2">
-            {{word.furigana}}
-        </div>
-    ` || ''}
+    <div class="flex justify-center relative">
+        ${data.furigana && data.word.furigana && `
+            <div class="text-1xl text-center mb-2" title="Furigana reading">
+                {{word.furigana}}
+            </div>
+        ` || ''}
 
-    ${data.furigana && (data.word.onyomi || data.word.kunyomi) && `
-        <div class="text-center mb-4 -mt-8">
-            <p class="${data.word.onyomi ? '' : 'hidden'}"><span title="Onyomi reading">on</span>: {{word.onyomi}}</p>
-            <p class="${data.word.kunyomi ? '' : 'hidden'}"><span title="Kunyomi reading">kun</span>: {{word.kunyomi}}</p>
-        </div>
-    ` || ''}
+        ${data.romaji && data.word.romaji && `
+            ${data.furigana && `
+                <div class="mx-4">※</div>
+            ` || ''}
+            <div class="text-1xl text-center mb-2" title="Romaji reading">
+                {{word.romaji}}
+            </div>
+        ` || ''}
+
+        ${data.furigana && (data.word.onyomi || data.word.kunyomi) && `
+            <div class="text-center mb-4 -mt-8">
+                <p class="${data.word.onyomi ? '' : 'hidden'}"><span title="Onyomi reading">on</span>: {{word.onyomi}}</p>
+                <p class="${data.word.kunyomi ? '' : 'hidden'}"><span title="Kunyomi reading">kun</span>: {{word.kunyomi}}</p>
+            </div>
+        ` || ''}
+    </div>
 
     <div class="text-8xl leading-24 text-center mb-16 text-word inline-block">
         <span class="hover:border-b border-dashed transition-all duration-50" :click="speak({{word.word}})">

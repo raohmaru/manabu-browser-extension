@@ -9,6 +9,7 @@ export interface StoredData {
     category: number;
     level: number;
     furigana: boolean;
+    romaji: boolean;
     description: boolean;
     examples: boolean;
     voice: number;
@@ -21,4 +22,9 @@ export interface JapaneseWord {
     translation: string;
     category: number;
     level: number;
+    description: string;
+    example: string;
+    example_translation: string;
+    onyomi: string;
+    kunyomi: string;
 }

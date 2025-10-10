@@ -6,6 +6,7 @@ import { getVoices, speakText } from '../../utils/voice';
 import { DEFAULT_LANG } from '../../types/conf';
 import Component from '../Component';
 import template from './manabu-word-template';
+import { kanaToRomaji } from '../../utils/kana';
 
 export default class ManabuWord extends Component {
     private word: JapaneseWord | undefined;
@@ -37,11 +38,16 @@ export default class ManabuWord extends Component {
     async render() {
         const data = await getData();
         const voices = await getVoices(DEFAULT_LANG);
+        let romaji = '';
+        if (this.word && this.word.category !== Categories.indexOf('kanji')) {
+            romaji = kanaToRomaji(this.word.furigana || this.word.word);
+        }
         super.render({
             ...data,
             word: {
                 ...this.word,
-                sanitized: this.word?.word.replace(/[〜（）]/g, '')
+                sanitized: this.word?.word.replace(/[〜（）]/g, ''),
+                romaji
             },
             isBookmarked: this.isBookmarked,
             categories: Categories,
@@ -58,6 +64,7 @@ export default class ManabuWord extends Component {
         this.subscribeTo('category', () => this.loadNewWord());
         this.subscribeTo('level', () => this.loadNewWord());
         this.subscribeTo('furigana', () => this.render());
+        this.subscribeTo('romaji', () => this.render());
         this.subscribeTo('description', () => this.render());
         this.subscribeTo('examples', () => this.render());
     }

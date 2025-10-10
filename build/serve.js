@@ -64,11 +64,15 @@ export async function serve(devExtension) {
             if (!devExtension) {
                 injectHotReloadToIndex();
             }
-        // Copy assets
-        } else if (file?.endsWith('.html')) {
+        // Build CSS if a template has changed
+        } else if (file?.endsWith('-template.ts')) {
+            const cssFile = file.replace('-template.ts', '.css');
+            execSync(`${pkg.scripts['build:css']} ${path.join(srcDir, cssFile)}`);
+        // Copy template and trigger CSS if a Tailwind class has been modified
+        } else if (file?.endsWith('template.html')) {
             fs.copyFileSync(fileSrc, fileSrc.replace(srcDir + path.sep, distDir + path.sep));
-            // Trigger CSS if a Tailwind class has been modified
             execSync(pkg.scripts['build:css']);
+        // Copy assets
         } else if (file?.includes(`${assetsDir}${path.sep}`)) {
             if (fs.existsSync(fileSrc)) {
                 fs.copyFileSync(fileSrc, path.join(distDir, file));
