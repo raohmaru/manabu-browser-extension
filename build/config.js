@@ -7,7 +7,10 @@ export const entryHTML = 'index.html';
 export const assetsDir = 'assets';
 export const componentsDir = 'components';
 export const buildConfig = {
-    entryPoints: [join(srcDir, 'main.ts')],
+    entryPoints: [
+        join(srcDir, 'head.ts'),
+        join(srcDir, 'main.ts')
+    ],
     outdir: distDir,
     bundle: true,
     sourcemap: true,
