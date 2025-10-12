@@ -24,7 +24,7 @@ You need at least [node.js](https://nodejs.org/en) v22 installed in your device.
    ```
 1. Build the extension:
    ```bash
-   npm run build
+   npm run build:dist
    ```
 1. Open Chrome and navigate to `chrome://extensions`.
 1. Enable "Developer mode" in the top right corner.

@@ -1,6 +1,6 @@
 {
   "name": "manabu-browser-extension",
-  "version": "0.8.0",
+  "version": "0.8.1",
   "type": "module",
   "description": "A browser extension that displays random Japanese words on new tabs",
   "scripts": {
@@ -8,7 +8,7 @@
     "build:js": "node build/build.js",
     "build:db": "node build/generate-db.js",
     "build": "npm run clean && npm run copy:assets && concurrently \"npm run build:db\" \"npm run build:css\" \"npm run build:js\"",
-    "build:prod": "cross-env NODE_ENV=production npm run build",
+    "build:dist": "cross-env NODE_ENV=production npm run build",
     "clean": "node -e \"require('fs-extra').emptyDirSync('dist')\"",
     "copy:assets": "node build/copy-assets.js",
     "dev": "npm run copy:assets && npm run build:css && npm run build:js -- --serve",
