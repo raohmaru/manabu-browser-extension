@@ -2,7 +2,7 @@
 
 ## Project Structure
 ```
-japanese-word-new-tab/
+extension/
 ├── manifest.json
 ├── newtab.html
 ├── newtab.css (Tailwind CSS)

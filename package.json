@@ -1,6 +1,6 @@
 {
   "name": "manabu-browser-extension",
-  "version": "0.8.1",
+  "version": "0.9.0",
   "type": "module",
   "description": "A browser extension that displays random Japanese words on new tabs",
   "scripts": {

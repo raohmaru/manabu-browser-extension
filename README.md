@@ -44,7 +44,7 @@ npm run dev:chrome
 
 ---
 
-Based on [言葉 の Tab](https://addons.mozilla.org/en-US/firefox/addon/the-tab-of-words/) and [Tab of Words](https://tab-of-words.keibungen.com/).
+Inspired by [言葉 の Tab](https://addons.mozilla.org/en-US/firefox/addon/the-tab-of-words/) and [Tab of Words](https://tab-of-words.keibungen.com/).
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

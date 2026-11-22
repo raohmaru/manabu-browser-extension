@@ -133,7 +133,7 @@ const sqlite3 = await sqlite3InitModule({
     printErr: console.error,
 });
 try {
-    start(sqlite3);
+    start();
 } catch (err) {
     console.error(err.name, err.message);
 }
