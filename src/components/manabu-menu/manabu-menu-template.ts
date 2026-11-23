@@ -9,23 +9,29 @@ export default function(data: { [key: string]: any }) {
     <h4 class="text-xl mb-6">Options</h4>
     <div class="mx-auto w-fit mb-8">
         <div class="flex gap-4 flex-wrap justify-center mb-8">
-            <select class="select" title="Show words of this category"
-                    :change="selectCategory()">
-                ${data.categories.map((value: string, key: number) =>
-                    `<option value="${key}" ${ data.category === key ? 'selected' : "" }>
-                        ${value}
-                    </option>`
-                )}
-            </select>
+            <div>
+                <label class="block mb-1" for="category-select">Category</label>
+                <select id="category-select" class="select"
+                        :change="selectCategory()">
+                    ${data.categories.map((value: string, key: number) =>
+                        `<option value="${key}" ${ data.category === key ? 'selected' : "" }>
+                            ${value}
+                        </option>`
+                    )}
+                </select>
+            </div>
 
-            <select class="select" title="Show words of this JLPT level"
-                    :change="selectLevel()">
-                ${data.jlptLevels.map((value: string, key: number) =>
-                    `<option value="${key}" ${ data.level === key ? 'selected' : "" }>
-                        ${value}
-                    </option>`
-                )}
-            </select>
+            <div>
+                <label class="block mb-1" for="level-select">JLPT level</label>
+                <select id="level-select" class="select"
+                        :change="selectLevel()">
+                    ${data.jlptLevels.map((value: string, key: number) =>
+                        `<option value="${key}" ${ data.level === key ? 'selected' : "" }>
+                            ${value}
+                        </option>`
+                    )}
+                </select>
+            </div>
         </div>
 
         <fieldset class="mb-4">
@@ -61,8 +67,8 @@ export default function(data: { [key: string]: any }) {
         <h4 class="text-lg mb-4">Voice Settings</h4>
         <div class="mx-auto w-fit">
             <fieldset class="mb-4">
-                Voice:
-                <select class="select mb-2" title="Available voices in your device"
+                <label class="block mb-1" for="voice-select">Voice</label>
+                <select id="voice-select" class="select mb-2"
                         :change="selectVoice()">
                     ${data.voices.map((value: SpeechSynthesisVoice, key: number) =>
                         `<option value="${key}" ${ data.voice === key ? 'selected' : "" }>
@@ -77,6 +83,10 @@ export default function(data: { [key: string]: any }) {
 </form>
 
 <button class="burguer-menu absolute top-2 right-2 p-2 flex flex-col justify-between cursor-pointer"
+        type="button"
+        aria-label="Open settings menu"
+        aria-expanded="false"
+        aria-controls="menu"
         :click="toggle()">
     <span></span>
     <span></span>

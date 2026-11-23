@@ -3,6 +3,8 @@ export default function(data: { [key: string]: any }) {
 <link href="components/theme-toggle/theme-toggle.css" rel="stylesheet">
 
 <button class="theme-toggle absolute top-4 right-4 p-2 rounded-full cursor-pointer aspect-square w-10 shadow-lg bg-card"
+        type="button"
+        aria-label="Change theme"
         :click="cycleTheme()">
 </button>
 `;

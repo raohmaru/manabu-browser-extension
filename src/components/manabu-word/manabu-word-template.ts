@@ -28,9 +28,9 @@ export default function(data: { [key: string]: any }) {
     </div>
 
     <div class="text-8xl leading-24 text-center mb-16 text-word inline-block">
-        <span class="hover:border-b border-dashed transition-all duration-50" :click="speak({{word.word}})">
+        <h1 class="hover:border-b border-dashed transition-all duration-50" :click="speak({{word.word}})">
             {{word.word}}
-        </span>
+        </h1>
     </div>
 
     <div class="text-2xl text-center mb-8">

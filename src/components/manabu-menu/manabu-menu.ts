@@ -36,10 +36,21 @@ export default class Menu extends Component {
 
     toggle() {
         this.classList.toggle(this.openClassName);
+        this.updateMenuButtonState();
     }
 
     close() {
         this.classList.remove(this.openClassName);
+        this.updateMenuButtonState();
+    }
+
+    private updateMenuButtonState() {
+        const button = this.shadowRoot?.querySelector<HTMLButtonElement>('.burguer-menu');
+        if (!button) return;
+
+        const isOpen = this.classList.contains(this.openClassName);
+        button.setAttribute('aria-expanded', String(isOpen));
+        button.setAttribute('aria-label', isOpen ? 'Close settings menu' : 'Open settings menu');
     }
 
     selectCategory(e: Event) {
