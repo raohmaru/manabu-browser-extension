@@ -15,7 +15,7 @@ fs.globSync(path.join(srcDir, '**', '*.html'))
         await fsextra.ensureDir(path.dirname(outputFile));
         copyFileToDist(file, outputFile);
     });
-copyFileToDist('node_modules/@sqlite.org/sqlite-wasm/sqlite-wasm/jswasm/sqlite3.wasm');
+copyFileToDist('node_modules/@sqlite.org/sqlite-wasm/dist/sqlite3.wasm');
 copyFileToDist('manifest.json');
 fs.cpSync(path.join(srcDir, assetsDir), path.join(distDir, assetsDir), { recursive: true });
 console.log('[Assets] Copied folder to', path.join(distDir, assetsDir));

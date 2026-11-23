@@ -11,7 +11,6 @@ Learn Japanese words every time you open a new tab in your browser.
 - Filter words by category (noun, verb, adjective, etc.).
 - Filter words by [JLPT](https://www.jlpt.jp/e/) level (N1 to N5).
 - Read out Japanese words by using the [Web Speech API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API).
-- Built with TypeScript and Web Components.
 
 ## Installation
 You need at least [node.js](https://nodejs.org/en) v22 installed in your device.
