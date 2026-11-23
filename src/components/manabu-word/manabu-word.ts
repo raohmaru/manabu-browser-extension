@@ -69,7 +69,7 @@ export default class ManabuWord extends Component {
         this.subscribeTo('examples', () => this.render());
     }
 
-    async speak(e: Event, text: string) {
+    async speak(_: Event, text: string) {
         const data = await getData();
         speakText(text, data.voice);
     }

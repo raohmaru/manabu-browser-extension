@@ -1,5 +1,9 @@
 import { StorageInterface } from '../../types/interfaces';
 
+
+/**
+ * ChromeStorage class provides an implementation of the StorageInterface using the Chrome Storage API.
+ */
 export class ChromeStorage implements StorageInterface {
     private key: string;
 

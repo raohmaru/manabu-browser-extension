@@ -1,5 +1,8 @@
 import { StorageInterface } from '../../types/interfaces';
 
+/**
+ * LocalStorage class provides an implementation of the StorageInterface using the browser's localStorage API.
+ */
 export class LocalStorage implements StorageInterface {
     private key: string;
 

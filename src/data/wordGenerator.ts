@@ -2,9 +2,15 @@ import { JapaneseWord } from '../types/interfaces';
 import { openDatabase, SQLiteDatabase } from './database';
 import { JLPTLevels, DBFields } from '../types/types';
 
-function getQuery(columns: string[], filters: string[]|null = null) {
+/**
+ * Generates a SQL query to fetch a random word from the database based on the specified columns and optional filters.
+ * @param fields 
+ * @param filters 
+ * @returns 
+ */
+function getQuery(fields: string[], filters: string[]|null = null) {
     return `
-        SELECT ${columns.join(', ')}
+        SELECT ${fields.join(', ')}
         FROM words
         ${filters?.length && (
             'WHERE ' + filters.join(' AND ')
@@ -13,6 +19,12 @@ function getQuery(columns: string[], filters: string[]|null = null) {
     `;
 }
 
+/**
+ * Fetches a random word from the database based on the specified category and level. If no words match the criteria, it will return a completely random word from the database.
+ * @param category 
+ * @param level 
+ * @returns 
+ */
 export async function getRandomWord(
     category: number = 0,
     level: number = 0
@@ -26,19 +38,19 @@ export async function getRandomWord(
         level = Math.floor( Math.random() * (JLPTLevels.length - 1) ) + 1;
     }
     filters.push(`level = ${level}`);
-    const columns = Object.values(DBFields);
+    const fields = Object.values(DBFields);
     const db: SQLiteDatabase = await openDatabase(level);
-    let res = await db.query(getQuery(columns, filters));
+    let res = await db.query(getQuery(fields, filters));
     // If no matches, return random word
     if (!res.length) {
-        res = await db.query(getQuery(columns));
+        res = await db.query(getQuery(fields));
         if (!res.length) {
             return;
         }
     }
     const values = res[0];
     const word: { [key: string]: any } = {};
-    columns.forEach((key, i) => {
+    fields.forEach((key, i) => {
         word[key] = values[i];
     });
 

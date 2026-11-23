@@ -1,5 +1,8 @@
 import sqlite3InitModule, { Sqlite3Static, Database } from '@sqlite.org/sqlite-wasm';
 
+/**
+ * 
+ */
 export class SQLiteDatabase {
     private db: Database | undefined;
     private level: Number;
@@ -8,6 +11,11 @@ export class SQLiteDatabase {
         this.level = level;
     }
 
+    /**
+     * Opens a SQLite database file corresponding to the specified JLPT level. The database is fetched from the `data/vocab` directory and loaded into memory using the SQLite WASM module.
+     * @param sqlite3 
+     * @returns 
+     */
     async open(sqlite3: Sqlite3Static) {
         console.log('Running SQLite3 version', sqlite3.version.libVersion);
         return fetch(`data/vocab/n${this.level}.sqlite3`)
@@ -28,6 +36,11 @@ export class SQLiteDatabase {
             });
     };
 
+    /**
+     * Executes a SQL query on the opened SQLite database and returns the result as an array of rows. Each row is represented as an array of strings or numbers. If the database is not open, it resolves to an empty array.
+     * @param sql - SQL query
+     * @returns 
+     */
     query(sql: string): Promise<Array<Array<string|number>>> {
         return new Promise((resolve, reject) => {
             if (!this.db) {
@@ -47,6 +60,9 @@ export class SQLiteDatabase {
         });
     }
 
+    /**
+     * Closes the SQLite database and releases any associated resources. If the database is not open, this method does nothing.
+     */
     close() {
         if (this.db) {
             this.db.close();
@@ -55,6 +71,11 @@ export class SQLiteDatabase {
     }
 }
 
+/**
+ * Opens a SQLite database corresponding to the specified JLPT level. It initializes the SQLite WASM module, fetches the appropriate database file, and returns an instance of `SQLiteDatabase` that can be used to query the database.
+ * @param level JLPT level
+ * @returns 
+ */
 export async function openDatabase(level: Number): Promise<SQLiteDatabase> {
     return new Promise(async (resolve) => {
         // Silent logs
@@ -64,10 +85,7 @@ export async function openDatabase(level: Number): Promise<SQLiteDatabase> {
             debug: () => {},
             log: () => {}
         };
-        const sqlite3 = await sqlite3InitModule({
-            print: console.log,
-            printErr: console.error,
-        });
+        const sqlite3 = await sqlite3InitModule();
         try {
             const db = new SQLiteDatabase(level);
             await db.open(sqlite3);

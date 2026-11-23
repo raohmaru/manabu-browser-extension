@@ -4,6 +4,11 @@ const evalRegex: RegExp = /\$\{([\s\S]+?)(?!}$)\}\$/g;
 const eventParamRegex: RegExp = /:(\w+)="\s*([^"]+)\s*"/g;
 const namespace = '_';
 
+/**
+ * Parse a template string and return a function that can be used to replace the variables in the template with actual values.
+ * @param {string} expr - The template string to be parsed.
+ * @returns {Function} - A function that takes an object or array of values and returns the parsed template string with the variables replaced by their corresponding values.
+ */
 export const parseTemplate = (expr: string) :Function => {
     return (data: Object|string[], showVarIfNull: boolean = true) => {
         let i: number = 0;
@@ -37,6 +42,11 @@ const xquery = `@*[starts-with(name(), "${namespace}")]`;
 // Search in the root node and children nodes
 const xpath = `${xquery} | *//${xquery}`;
 
+/**
+ * Binds events to elements based on the attributes defined in the template.
+ * @param {object} obj - The object containing the methods to be bound to the events.
+ * @param {Element|DocumentFragment} node - The root node or document fragment to search for elements with event attributes.
+ */
 export const bindEvents = (obj: { [key: string]: Function }, node: Element|DocumentFragment) => {
     const evaluator = new XPathEvaluator();
     let nodes: Element[] = [];
@@ -46,6 +56,7 @@ export const bindEvents = (obj: { [key: string]: Function }, node: Element|Docum
         nodes.push(node);
     }
     nodes.forEach((n) => {
+        // Evaluate the XPath expression to find all attributes that start with the namespace prefix
         const result = evaluator.evaluate(
             xpath,
             n,

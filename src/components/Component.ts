@@ -1,5 +1,8 @@
 import { parseTemplate, bindEvents } from '../utils/template';
 
+/**
+ * Component class that serves as a base for all custom elements in the project. It extends the HTMLElement class and provides functionality for rendering templates, handling styles, and binding events.
+ */
 export default class Component extends HTMLElement {
     protected template: Function | undefined;
     protected hasStyleTemplate: Boolean = false;
